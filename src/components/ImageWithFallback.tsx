@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 interface ImageProps {
   src: string;
@@ -6,13 +6,13 @@ interface ImageProps {
   className?: string;
 }
 
-export const ImageWithFallback: React.FC<ImageProps> = ({ src, alt, className }) => {
-  const [error, setError] = React.useState(false);
+export const ImageWithFallback = ({ src, alt, className }: ImageProps) => {
+  const [error, setError] = useState(false);
   
   if (error) {
     return (
-      <div className={`bg-gradient-to-br from-green-100 to-yellow-100 flex items-center justify-center ${className}`}>
-        <span className="text-green-800 font-medium text-sm px-4 text-center">{alt}</span>
+      <div className={`bg-gradient-to-br from-green/20 to-gold/20 flex items-center justify-center ${className}`}>
+        <span className="text-brown-dark font-medium text-sm px-4 text-center">{alt}</span>
       </div>
     );
   }
