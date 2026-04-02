@@ -1,104 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-green: #228B22;
-  --color-green-dark: #1a6b1a;
-  --color-green-light: #2da832;
-  --color-yellow: #FFD700;
-  --color-yellow-dark: #e6c200;
-  --color-red: #DC143C;
-  --color-warm: #FAF8F5;
-  --color-cream: #F5F0E8;
-  --color-brown-dark: #2D2420;
-  --color-brown-medium: #5D4E47;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  margin: 0;
   font-family: 'Inter', sans-serif;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.font-display {
-  font-family: 'Playfair Display', serif;
-}
-
-.bg-warm {
-  background-color: var(--color-warm);
-}
-
-.bg-cream {
-  background-color: var(--color-cream);
-}
-
-.text-brown-dark {
-  color: var(--color-brown-dark);
-}
-
-.text-brown-medium {
-  color: var(--color-brown-medium);
-}
-
-.bg-brown-dark {
-  background-color: var(--color-brown-dark);
-}
-
-.bg-brown-medium {
-  background-color: var(--color-brown-medium);
-}
-
-.bg-brown-darker {
-  background-color: #1a1411;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-cream);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-green);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-green-dark);
-}
-
-::selection {
-  background-color: rgba(34, 139, 34, 0.2);
-  color: var(--color-brown-dark);
-}
-
-*:focus-visible {
-  outline: 2px solid var(--color-green);
-  outline-offset: 2px;
-}
-
-button, a {
-  transition: all 0.2s ease;
-}
-
-.image-hover {
-  transition: transform 0.3s ease;
-}
-
-.image-hover:hover {
-  transform: scale(1.05);
-}
-
-.card-shadow {
-  box-shadow: 0 4px 20px rgba(45, 36, 32, 0.08);
+html {
+  scroll-behavior: smooth;
 }
